@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Template for Simple Web Sites">
+        <title>Template By Alexandre</title>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({ reset: true });
+        </script>
+        <style>
+            *{margin: 0;}
+            
+            html{scroll-behavior: smooth;}
+
+            body{
+                background-color: antiquewhite;
+            }
+            body::-webkit-scrollbar {
+                width: 0px;
+            }
+            ul{
+                list-style: none;
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: rgba(255, 255, 255, 0.7);
+                position: fixed;
+                width: 90vw;
+                height: 2rem;
+            }
+            #links{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+            }
+            .nav_item{
+                margin: 1vw;
+            }
+            section{
+                display: flex;
+                height: 100vh;
+                background-color: aqua;
+                padding: 3rem;
+            }
+            #section1{
+                background-color: blue;
+            }
+            #section2{
+                background-color: coral;
+            }
+            #section3{
+                background-color: green;
+            }
+            #section4{
+                background-color: gold;
+            }
+            #section5{
+                background-color: brown;
+            }
+            #section6{
+                background-color: aqua;
+            }
+            a{
+                text-decoration: none;
+            }
+            img{
+                width: 50vw;
+            }
+            #myBtn {
+                transition: 1s;
+                display: none; /* Hidden by default */
+                position: fixed; /* Fixed/sticky position */
+                bottom: 20px; /* Place the button at the bottom of the page */
+                right: 30px; /* Place the button 30px from the right */
+                z-index: 99; /* Make sure it does not overlap */
+                border: none; /* Remove borders */
+                outline: none; /* Remove outline */
+                background-color: red; /* Set a background color */
+                color: white; /* Text color */
+                cursor: pointer; /* Add a mouse pointer on hover */
+                padding: 15px; /* Some padding */
+                border-radius: 10px; /* Rounded corners */
+                font-size: 18px; /* Increase font size */
+            }
+
+            #myBtn:hover {
+                transition: 1s ;
+                background-color: #555; /* Add a dark-grey background on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="links">
+                    <p class="nav_item"><a href="#section1">Section 1</a></p>
+                    <p class="nav_item"><a href="#section2">Section 2</a></p>
+                    <p class="nav_item"><a href="#section3">Section 3</a></p>
+                    <p class="nav_item"><a href="#section4">Section 4</a></p>
+                    <p class="nav_item"><a href="#section5">Section 5</a></p>
+                    <p class="nav_item"><a href="#section6">Section 6</a></p>
+                </div>
+                <div></div>
+            </nav>
+        </header>
+        <main>
+            <section id="section1">
+                <div>
+                    <h1 class="revell">Title</h1>
+                    <p class="revell">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et facilis deleniti explicabo aperiam laborum consequatur qui blanditiis debitis, temporibus nihil non, quos doloribus voluptatem atque aut, quaerat incidunt ad expedita!
+                    </p>
+                </div>
+                <img class="revell"  src="" alt="Image">
+            </section>
+
+            <section id="section2">
+                <div>
+                    <h1 class="revell">Title</h1>
+                    <p class="revell">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure, aperiam, laboriosam similique sit atque ipsa vel vero error quae sapiente consequuntur quisquam beatae. Ratione accusamus sit in expedita fugit!
+                    </p>
+                </div>
+                <img class="revell" src="" alt="Image">
+            </section>
+            <section id="section3">
+                <div>
+                    <h1 class="revell">Title</h1>
+                    <p class="revell">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ducimus ut ipsum atque nulla. Quod omnis voluptatibus sed dolor aperiam ab harum dolorum esse quae. Quidem laudantium ad est provident.
+                    </p>
+                </div>
+                <img class="revell" src="" alt="Image">
+            </section>
+            <section id="section4">
+                <div>
+                    <h1 class="revell">Title</h1>
+                    <p class="revell">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum sed explicabo nam consequatur dolor error voluptatum aut. Tempora reprehenderit eligendi tenetur aspernatur sapiente. Nobis consequuntur modi laboriosam doloribus sequi eos.
+                    </p>
+                </div>
+                <img class="revell" src="" alt="Image">
+            </section>
+            <section id="section5">
+                <div>
+                    <h1 class="revell">Title</h1>
+                    <p class="revell">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, dolores cupiditate at quas nulla eos quisquam tempore magni dolorem possimus quae cumque a libero reprehenderit suscipit dicta consequatur iste minus.
+                    </p>
+                </div>
+                <img class="revell" src="" alt="Image">
+            </section>
+            <section id="section6">
+                <div>
+                    <h1 class="revell">Bibliograph</h1>
+                    <ul class="revell">
+                        <li>Item 1<a href="#">Link for Item</a></li>
+                        <li>Item 2<a href="#">Link for Item</a></li>
+                        <li>Item 3<a href="#">Link for Item</a></li>
+                        <li>Item 4<a href="#">Link for Item</a></li>
+                    </ul>
+                </div>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </main>
+        <footer>
+            <p>The Beathful Footer</p>
+        </footer>
+        <script>
+            ScrollReveal().reveal('.revell', {
+                rotate: {x: 0, y:100, z: 0},
+                duration: 1500,
+                delay: 0
+            });
+            mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } 
+            
+            else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </body>
+</html>
